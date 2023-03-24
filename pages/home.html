@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <title>Document</title>
+<title>My Web Page</title>
+</head>
+<body>
+    <!-- Scripts -->
+    <canvas id="c"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/controls/OrbitControls.min.js"></script>
+    <script src="../styles/background.js"></script>
+    <script src="../styles/login.js"></script>
+    <script src="../styles/signup.js"></script>
+    <header id="mainHeader">
+        <h1>Crypto Marketing</h1>
+        <!-- Login code -->
+        <button class="buttonlogin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        <div id="id01" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="logincontainer">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+                
+            <button class="buttonlogin" type="submit">Login</button>
+            </div>
+
+            <div class="logincontainer" style="background-color:#f1f1f1">
+            <button class="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+            </div>
+        </form>
+        </div>
+        <!-- Sign up code -->
+        <button class="buttonSignUp" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">SignUp</button>
+
+        <div id="id02" class="modal">
+        
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="signUpcontainer">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+                
+            <button class="buttonSignUp" type="submit">SignUp</button>
+            </div>
+
+            <div class="signUpcontainer" style="background-color:#f1f1f1">
+            <button class="cancelbtn" type="button" onclick="document.getElementById('id02').style.display='none'" >Cancel</button>
+            </div>
+        </form>
+        </div>
+        <!-- NavBar code -->
+            <button id="nav-btn" onclick="toggleNav()">Menu</button>
+    </header>
+    <nav id="nav-form">
+        <a href="#"><button class="interiorNavBtn">Home</button></a>
+        <a href="#"><button class="interiorNavBtn">About</button></a>
+        <a href="#"><button class="interiorNavBtn">Contact</button></a>
+    </nav>
+    
+        <main>
+            <p>Welcome to our trading Page!</p>
+        </main>
+
+    <footer>
+        <p>&copy; 2023 A Group2 Project</p>
+    </footer>
+    <!-- Extra scripts that work here and not at top. For some reason... -->
+    <script>
+        function toggleNav() {
+        let nav = document.getElementById("nav-form");
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+        }
+    </script>
+</body>
+

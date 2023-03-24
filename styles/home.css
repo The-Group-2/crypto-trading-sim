@@ -1,0 +1,84 @@
+/* Set the background */
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    #c {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+/* Style the header section */
+    #mainHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 5px;
+        border: white;
+        border-radius: 10px;
+    }
+/* Style the navigation menu button */
+    #nav-btn {
+        background-color: transparent;
+        border: 5px solid white;
+        color: white;
+        padding: 25px;
+        cursor: pointer;
+    }
+/* Style the navigation menu */
+    #nav-form {
+        display: none;
+        position: absolute;
+        top: 125px;
+        right: 20px;
+        width: 200px;
+        padding: 10px;
+        background-color: rgb(78, 78, 78);
+        border: 2px solid white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+/* Style the buttons inside nav bar */
+    .interiorNavBtn {
+        background-color: #555555;
+        color: whitesmoke;
+        border: 2px solid rgb(152, 76, 250);
+        border-radius: 20px;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    
+    .interiorNavBtn:hover {
+        background-color: rgb(214, 214, 214);
+        color: black;
+    }
+/* Show the navigation menu on small screens */
+    @media screen and (max-width: 600px) {
+        #nav-form {
+            display: block;
+            position: static;
+            width: 100%;
+            border: none;
+            box-shadow: none;
+        }
+    }
+/* Style the footer section */
+    footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    }
