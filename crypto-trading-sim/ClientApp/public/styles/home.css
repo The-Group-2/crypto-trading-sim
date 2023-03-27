@@ -12,13 +12,12 @@
 /* Style the header section */
     #mainHeader {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         background-color: #333;
         color: white;
         padding: 5px;
         border: white;
-        border-radius: 10px;
     }
 /* Style the navigation menu button */
     #nav-btn {
@@ -34,7 +33,7 @@
         position: absolute;
         top: 125px;
         right: 20px;
-        width: 200px;
+        width: 130px;
         padding: 10px;
         background-color: rgb(78, 78, 78);
         border: 2px solid white;
@@ -66,8 +65,10 @@
     @media screen and (max-width: 600px) {
         #nav-form {
             display: block;
-            position: static;
-            width: 100%;
+            position: absolute;
+            top: auto;
+            right: 0px;
+            width: 30%;
             border: none;
             box-shadow: none;
         }
